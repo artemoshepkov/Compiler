@@ -43,9 +43,9 @@ int main()
     initMapALUCommand();
     initMapCUCommand();
 
-    sc_memorySet(0, 0b000100000001010); // 10
-    // sc_memorySet(1, 0b000000000000010); // 2
-    // sc_memorySet(2, 0b110100000000000); // -2048
+    // sc_memorySet(0, 0b100000000001010); // 10
+    // sc_memorySet(1, 0b100000000000000); // 0
+    // sc_memorySet(2, 0b100000000000000); // -2048
 
 	struct itimerval nval, oval;
 

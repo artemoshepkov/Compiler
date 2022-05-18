@@ -1,5 +1,8 @@
 #pragma once
 
+#include <iostream>
+
+#include "myTerm.h"
 #include "enumColors.h"
 
 #define RIGHT_BOTTOM_ANGLE 'j'

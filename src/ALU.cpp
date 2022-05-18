@@ -1,57 +1,6 @@
 #include "ALU.h" 
 
 std::map <int, foo1> ALUCommands;
-    //     case 81:
-    //         break;
-    //     case 82:
-    //         break;
-    //     case 83:
-    //         break;
-    //     case 84:
-    //         break;
-    //     case 85:
-    //         break;
-    //     case 86:
-    //         break;
-    //     case 87:
-    //         break;
-    //     case 88:
-    //         break;
-    //     case 89:
-    //         break;
-    //     case 96:
-    //         break;
-    //     case 97:
-    //         break;
-    //     case 98:
-    //         break;
-    //     case 99:
-    //         break;
-    //     case 100:
-    //         break;
-    //     case 101:
-    //         break;
-    //     case 102:
-    //         break;
-    //     case 103:
-    //         break;
-    //     case 104:
-    //         break;
-    //     case 105:
-    //         break;
-    //     case 112:
-    //         break;
-    //     case 113:
-    //         break;
-    //     case 114:
-    //         break;
-    //     case 115:
-    //         break;
-    //     case 116:
-    //         break;
-    //     case 117:
-    //         break;
-    //     case 118:
 
 void initMapALUCommand()
 {
@@ -85,6 +34,10 @@ int ALU_sub(int value)
     if (((value >> 13) & 0b1) == 1)
     {
         value &= 0b101111111111111;
+    }
+    else if ((value & 0b1111111111111) == 0)
+    {
+
     }
     else
     {
